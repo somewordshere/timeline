@@ -1,0 +1,6 @@
+{
+  "name": "timeline-mods",
+  "description": "Moritz's Claude Code mods: a date timeline beside the chat",
+  "owner": { "name": "Moritz" },
+  "plugins": [{ "name": "chat-timeline", "source": "./" }]
+}

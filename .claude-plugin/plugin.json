@@ -1,0 +1,9 @@
+{
+  "name": "chat-timeline",
+  "version": "0.1.0",
+  "description": "A date timeline beside the chat: hover to magnify a date, click to jump to that point in the conversation",
+  "author": { "name": "Moritz" },
+  "license": "MIT",
+  "keywords": ["timeline", "navigation", "history", "mod"],
+  "types": "./types/index.d.ts"
+}
