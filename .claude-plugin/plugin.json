@@ -1,9 +1,52 @@
 {
   "name": "chat-timeline",
-  "version": "0.1.0",
-  "description": "A date timeline beside the chat: hover to magnify a date, click to jump to that point in the conversation",
-  "author": { "name": "Moritz" },
+  "version": "0.2.0",
+  "description": "A date timeline beside the chat: each message you sent under its time, click one to jump to it in the conversation",
+  "author": { "name": "Krlo" },
   "license": "MIT",
   "keywords": ["timeline", "navigation", "history", "mod"],
-  "types": "./types/index.d.ts"
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "clock": {
+      "type": "string",
+      "title": "Clock",
+      "description": "How times are written: 16:41 or 4:41 PM",
+      "options": ["24-hour", "12-hour"],
+      "default": "24-hour"
+    },
+    "monthNames": {
+      "type": "string",
+      "title": "Month names",
+      "description": "Months written in full (October) or short (Oct)",
+      "options": ["full", "short"],
+      "default": "full"
+    },
+    "textSize": {
+      "type": "string",
+      "title": "Text size",
+      "description": "Size of the dates and times; large is one step bigger",
+      "options": ["normal", "large"],
+      "default": "normal"
+    },
+    "hoverCard": {
+      "type": "boolean",
+      "title": "Hover card",
+      "description": "Open a card with the full date beneath a time while it is hovered",
+      "default": false
+    },
+    "preview": {
+      "type": "string",
+      "title": "Message preview",
+      "description": "Where the message's first words show: in the hover card, always below each time, or nowhere",
+      "options": ["in hover card", "always below time", "hidden"],
+      "default": "always below time"
+    },
+    "messageSize": {
+      "type": "string",
+      "title": "Message size",
+      "description": "Size of the message previews shown below each time; each step up is one size bigger",
+      "options": ["small", "medium", "large"],
+      "default": "medium"
+    }
+  }
 }
